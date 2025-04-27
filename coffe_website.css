@@ -703,9 +703,7 @@ max-height: fit-content;
     color: #262626;
 
 }
-.contact-details-col2 form{
-    min-width: 350px;
-}
+
 .contact-details a{
     text-decoration: none;
     border: none;
