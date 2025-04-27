@@ -841,11 +841,11 @@ max-height: fit-content;
 }
 .container2-col1 {
     width: 90%;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 .container2-col2{
     width: 85%;
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 .container2-col2 input{
     width:70%;
