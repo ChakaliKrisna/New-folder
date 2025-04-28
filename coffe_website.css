@@ -1,9 +1,12 @@
 *{
     margin:0;
-    padding:1px;
+    padding:0px;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     text-transform: capitalize;
+}
+body{
+    margin: 0;
 }
 html{
     scroll-behavior:smooth;
@@ -483,7 +486,7 @@ min-width: 300px;
     padding:10px 10px;
     border-radius: 10px;
     font-family: cursive;
-    font-size: 1rem;
+    font-size: 1.2rem;
     /* font-size: 0.5rem; */
     /* margin-bottom: 30px; */
     font-weight: 1000;
@@ -556,6 +559,17 @@ padding: 10px 10%;
 max-height: fit-content;
 
 }
+.container2-col2 #tasklist-h6{
+    color:#262626;
+    font-size: 0.8rem;
+    margin: 25% 20px;
+    line-height: 1.5;
+    text-align: center;
+    font-family: cursive;
+    /* box-shadow: 0px 0px 10px #fff; */
+
+}
+
 .container2-col2 #tasklist li{
     display: flex;
     justify-content: space-between;
@@ -638,6 +652,7 @@ max-height: fit-content;
     box-shadow: 0px 0px 5px #262626;
     /* padding-top:50px; */
     margin-top: 3px;
+    margin-bottom: 2px;
 
     min-height: fit-content;
     border: none;
@@ -696,6 +711,9 @@ max-height: fit-content;
     margin:30px 0;
 
 }
+.contact-details-col2 #inputmail{
+    text-transform: lowercase;
+}
 .contact-details-col2 textarea{
     display: block;
     width: 100%;
@@ -749,10 +767,12 @@ max-height: fit-content;
  height:8vh;   
  text-align: center;
  background-color: #262626;
+ margin:0px;
 
 }
 #copy-right p{
-    margin:15px;
+    margin:0px;
+    padding: 20px;
     font: 0.rem;
     color:#b4a6a6;
 }
@@ -821,7 +841,7 @@ max-height: fit-content;
     font-family: cursive;
     font-weight: 800;
     color: #262626;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
 .header-text{
@@ -922,6 +942,14 @@ nav{
     font-size: 0.7rem;
 }
 #header{
-    min-height: fit-content;
+    min-height: 100vh;
 }
+#tasklist-h6{
+    font-size: 0.5rem;
+    font-family: cursive;
+}.underline
+{
+    font-size: 0.9rem;
+}
+
 }

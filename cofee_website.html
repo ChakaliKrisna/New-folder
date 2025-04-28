@@ -214,6 +214,7 @@
     </div>
         <ul id="tasklist"></ul>
        <!-- / <a href="" onclick="submit()"> order now</a> -->
+        <h6 id="tasklist-h6">Browse our menu and pick your favorite <br> brew—crafted fresh just for you!</h6>
     <div class="buttonsclear" id="orderclear">
        <button onclick="ordernow()">place order</button>
 
@@ -255,7 +256,7 @@
 <div class="contact-details-col2">
 <form action="">
     <input type="text" placeholder="NAME" required class="inputform">
-    <input type="email" placeholder="EMAIL" required class="inputform">
+    <input type="email" placeholder="EMAIL" required class="inputform" id="inputmail">
     <textarea name="messege" id="textarea1"  placeholder="WRITE YOUR MESSEGE" class="inputform"></textarea>
     <button class="submit" onclick="submit1()">submit</button>
 
@@ -316,6 +317,7 @@ const arr=["Espresso","Masala Coffee","Cafe Frappe","Kashmiri Kahwa","Green Tea"
         }
      
    document.getElementById("orderclear").style.display="flex";
+   document.getElementById("tasklist-h6").style.display="none";
 
 
 }
