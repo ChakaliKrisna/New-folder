@@ -28,7 +28,7 @@ html{
         height: 55px;
         background-color:#0a0101;
         border-radius: 50%;
-        padding: 8px 5px;
+        padding: 5px 5px;
         text-align: center;
         color: #fff;
         box-shadow: 0px 0px 10px #fff;
@@ -71,9 +71,9 @@ html{
       position: fixed;
         width: 100%;
         grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
-        margin:0px 0px;
+        /* margin:0px 0px; */
         margin-top: 0px;
-        padding: 20px 5%;
+        padding: 15px 5%;
         border: 0.5px solid #b1a4a4;
         border-radius: 5px;
         box-shadow: 0px 0px 15px #b4a6a6;
@@ -92,7 +92,10 @@ html{
         display: flex;
         justify-content: end;
         flex-wrap: wrap;
-        padding: 0px 5px ;
+        padding: 5px 5px ;
+        /* border: 1px solid white; */
+        margin: 0px 5px;
+
     }
     .container{
         padding:30px 8%;
@@ -108,7 +111,7 @@ html{
     nav li{
         list-style-type:none;
         display: inline-block;
-        margin: 5px 0;
+        margin: 5px 10px;
        /* margin-right: 10px; */
        
         color:#fff;
@@ -235,7 +238,7 @@ html{
    }
    .about-col1{
     flex-basis: 30%;
-    padding: 10px 50px;
+    padding: 10px 40px;
     
    }
    .about-col1 img{
@@ -248,6 +251,7 @@ html{
     display: block;
     box-shadow: 0px 0px 10px #454343;
     border-radius: 50%;
+    text-align: center;
    
   
     
@@ -348,8 +352,8 @@ html{
     width:65%;
     max-width: 250px;
     /* max-height: 400px; */
-    aspect-ratio: 1/1;
-    height:70%;
+    aspect-ratio: 4/3;
+    height:60%;
     border-radius: 20px;
     
    }
@@ -671,10 +675,13 @@ max-height: fit-content;
 
 
 }
+
+    /* border: 1px solid black; */
+
 .contact-details-col2 input{
     display: block;
     width: 100%;
-    height: 50px;
+    height: 20%;
     
     padding: 10px 25px;
     margin:20px 0px;
@@ -744,7 +751,7 @@ max-height: fit-content;
 }
 #copy-right p{
     margin:15px;
-    font: 0.8rem;
+    font: 0.rem;
     color:#b4a6a6;
 }
 .fa-solid{
@@ -765,26 +772,27 @@ max-height: fit-content;
     .logo{
     display: block;
     height: 50px;
-    padding: 5px 5px;
-    width: 25%;
+    padding: 8px 5px;
+    width:18%;
  }   
  .logo h3{
-    font-size: 0.6rem;
+    font-size: 0.5rem;
     text-decoration: none;
    
 
  }
  .logo span{
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.8rem;
+    
    
  }
 .navlist{
    display: grid;
    grid-template-columns: 30% 30% 30% ;
-   gap:5px;
+   gap:8px;
    height: 50px;
-   padding:0px;
+   padding:5px ;
    /* border: 1px solid #1f1e1e; */
 }
 .navlist li{
@@ -792,7 +800,7 @@ max-height: fit-content;
     
 }
 .navlist li a{
-    font-size: 0.85rem;
+    font-size: 0.7rem;
     margin-right: 10px;
     color:#fff;
     padding: 5px 7px;
@@ -846,7 +854,7 @@ max-height: fit-content;
     /* margin-left: 30px; */
 }
 .container2-col2 input{
-    width:70%;
+    width: 70%;
     font-size: 0.9rem;
 
 }
@@ -870,5 +878,27 @@ max-height: fit-content;
     line-height: 1.5;
     font-size: 0.8rem;
     font-weight: 550;
+}
+#copy-right p{
+    font-size: 0.7rem;
+}
+.contact-details-col2 form{
+    width: 80vw;
+}
+.worklist img{
+    aspect-ratio: 1/1;
+}
+.navlist{
+    width: 65vw;
+    height:65px;
+    padding: 5px 5px;
+
+}
+
+.navlist li{
+    margin: 5px 5px;
+}
+nav{
+    padding:2% 2%;
 }
 }
