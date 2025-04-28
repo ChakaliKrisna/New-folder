@@ -256,7 +256,7 @@
 <form action="">
     <input type="text" placeholder="NAME" required class="inputform">
     <input type="email" placeholder="EMAIL" required class="inputform">
-    <textarea name="messege" id=""  placeholder="WRITE YOUR MESSEGE" class="inputform"></textarea>
+    <textarea name="messege" id="textarea1"  placeholder="WRITE YOUR MESSEGE" class="inputform"></textarea>
     <button class="submit" onclick="submit1()">submit</button>
 
 
@@ -362,13 +362,10 @@ function ordernow(){
 setTimeout(clear1,1000);
 
 function submit1(){
-    alert("YOUR RESPONSE HAS BEEN SUBMITED");
-    console.log("hello");
-    const forminput=document.querySelectorAll(".inputform");
-    forminput.forEach(element => {
-        element.textContent="";
-    });
-    
+    console.log(document.getElementById("textarea1").value);
+    if(document.getElementById("textarea1").value!=""){
+        alert("YOUR RESPONSE HAS BEEN SUBMITED");
+    }   
 
 
 }
