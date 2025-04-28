@@ -147,7 +147,7 @@ html{
     .header-text h2{
         margin:20px 0;
         line-height: 1.5;
-        animation: animationforh2 1.2s ease-in-out 0.5s 1 none normal;
+        animation: animationforh2 1.2s ease-in-out 0.9s 1 none normal;
     }
     @keyframes animationforh2 {
         0%{
@@ -192,7 +192,7 @@ html{
     .header-text p{
         font-size: 12px;
         line-height: 1.5;
-        animation: annimationfor-pand-buttons 1.2s ease-in-out 0.5s 1 none normal;
+        animation: annimationfor-pand-buttons 1.2s ease-in-out 0.9s 1 none normal;
     }
     .header-text span{
         color:rgb(229, 81, 22);
@@ -202,7 +202,7 @@ html{
     .header-text .buttons{
         margin:10px 0;
         padding:20px 0;
-        animation: annimationfor-pand-buttons 1.2s ease-in-out 0.5s 1 none normal;
+        animation: annimationfor-pand-buttons 1.2s ease-in-out 0.9s 1 none normal;
     }
     .header-text .buttons a{
         display: inline-block;
@@ -852,6 +852,7 @@ max-height: fit-content;
 }
 .header-text h2{
     font-size: 0.9rem;
+    color:#b1a4a4;
     
 }
 .header-text p{
