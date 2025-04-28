@@ -772,8 +772,10 @@ max-height: fit-content;
     .logo{
     display: block;
     height: 50px;
-    padding: 8px 5px;
-    width:18%;
+    padding: 10px 5px;
+    width:fit-content;
+    margin-top: 10px;
+    margin-left: 8px;
  }   
  .logo h3{
     font-size: 0.5rem;
@@ -783,7 +785,7 @@ max-height: fit-content;
  }
  .logo span{
     text-decoration: none;
-    font-size: 0.8rem;
+    font-size: 10px;
     
    
  }
@@ -887,6 +889,12 @@ max-height: fit-content;
 }
 .worklist img{
     aspect-ratio: 1/1;
+    width: 90%;
+
+    
+   
+}
+.worklist{text-align: center;
 }
 .navlist{
     width: 65vw;
@@ -900,5 +908,17 @@ max-height: fit-content;
 }
 nav{
     padding:2% 2%;
+    display: flex;
+    justify-content: space-between;
+    height: fit-content;
+}
+.about-col1 img{
+    margin: 0 30px;
+}
+.about-col2 p{
+    font-size: 0.7rem;
+}
+#heder{
+    min-height: fit-content;
 }
 }
