@@ -166,12 +166,12 @@
         </div>
         <div>
             <ul class="tab activelink" id="bevarages"> 
-          <li>Espresso</li>
-            <li>Masala Coffee</li>
-            <li>Café Frappe</li>
-            <li>Indian Filter Coffee</li>
-            <li>Kashmiri Kahwa</li>
-            <li>green tea</li>
+          <li>Espresso <button onclick="addtask('Espresso')"><i class="fa-solid fa-square-plus"></i></button></li>
+            <li>Masala Coffee<button onclick="addtask('Masala Coffee')"><i class="fa-solid fa-square-plus"></i></button></li>
+            <li>Café Frappe<button onclick="addtask('Café Frappe')"><i class="fa-solid fa-square-plus"></i></button></li>
+            <li>Indian Filter Coffee<button onclick="addtask('Indian Filter Coffee')"><i class="fa-solid fa-square-plus"></i></button></li>
+            <li>Kashmiri Kahwa<button onclick="addtask('Kashmiri Kahwa')"><i class="fa-solid fa-square-plus"></i></button></li>
+            <li>green tea <button onclick="addtask('green tea')"><i class="fa-solid fa-square-plus"></i></button></li>
             
             
             </ul>
@@ -180,10 +180,10 @@
           
             <ul class="tab" id="cakes"> 
                 <li>
-                    Iced Matcha</li>
-                    <li>Smoothies (Strawberry, Mango, Mixed Berry, etc.)</li>
-                    <li>Lemonade</li>
-                    <li>iced americano</li>
+                    Iced Matcha  <button onclick="addtask('Iced Matcha ')"><i class="fa-solid fa-square-plus"></i></button></li>
+                    <li>Smoothies (Strawberry, Mango, Mixed Berry, etc.) <button onclick="addtask('Smoothies (Strawberry, Mango, Mixed Berry, etc)')"><i class="fa-solid fa-square-plus"></i></button></li>
+                    <li>Lemonade <button onclick="addtask('Lemonade ')"><i class="fa-solid fa-square-plus"></i></button></li>
+                    <li>iced americano <button onclick="addtask('iced americano')"><i class="fa-solid fa-square-plus"></i></button></li>
                 
                 
             </ul>
@@ -191,12 +191,12 @@
     
            
             <ul class="tab" id="teas"> 
-                <li>Croissants (Plain, Almond, Chocolate) </li>
-                <li>Cookies</li>
-                <li>Veggie Wrap</li>
-                <li>Grilled Cheese</li>
-                <li> Cheese Sandwich </li>
-                <li>Flavored Syrups (Vanilla, Caramel, Hazelnut)</li>
+                <li>Croissants (Plain, Almond, Chocolate) <button onclick="addtask('Croissants (Plain, Almond, Chocolate)')"><i class="fa-solid fa-square-plus"></i></button></li>
+                <li>Cookies <button onclick="addtask('Cookies')"><i class="fa-solid fa-square-plus"></i></button></li>
+                <li>Veggie Wrap <button onclick="addtask('Veggie Wrap ')"><i class="fa-solid fa-square-plus"></i></button></li>
+                <li>Grilled Cheese <button onclick="addtask('Grilled Cheese')"><i class="fa-solid fa-square-plus"></i></button></li>
+                <li> Cheese Sandwich <button onclick="addtask('Cheese Sandwich ')"><i class="fa-solid fa-square-plus"></i></button></li>
+                <li>Flavored Syrups (Vanilla, Caramel, Hazelnut) <button onclick="addtask('Flavored Syrups (Vanilla, Caramel, Hazelnut)')"><i class="fa-solid fa-square-plus"></i></button></li>
              
                 
             </ul>
@@ -210,8 +210,8 @@
 
         <div class="container2-col2">
         <div class="listoftask">
-            <input type="text" placeholder="Name your craving" id="inputtext">
-        <button id="addtask" onclick="addtask()"><i class="fa-solid fa-square-plus"></i></button>
+            <!-- <input type="text" placeholder="Name your craving" id="inputtext"> -->
+        <!-- <button id="addtask" onclick="addtask()"><i class="fa-solid fa-square-plus"></i></button> -->
     </div>
         <ul id="tasklist"></ul>
        <!-- / <a href="" onclick="submit()"> order now</a> -->
@@ -290,14 +290,19 @@ const arr=["Espresso","Masala Coffee","Cafe Frappe","Kashmiri Kahwa","Green Tea"
     console.log("hello");
     const tablink=document.querySelectorAll(".tablinks");
     const tabs=document.querySelectorAll(".tab");
-     function addtask(){
-       const taskInput=document.getElementById("inputtext");
+
+
+    let attempted=0;
+     function addtask(content){
+    //    const taskInput=document.getElementById("inputtext");
        
     const li=document.createElement("li");
-        const text=document.getElementById("inputtext").value;
-        if(text!="" ){
+        // const text=document.getElementById("inputtext").value;
+        // if(text!="" ){
             //  if(arr.includes(text)){
-    li.textContent=document.getElementById("inputtext").value;
+    li.textContent=content;
+    console.log(content);
+    attempted=1;
 
     const button=document.createElement("button");
     button.textContent="❌";
@@ -307,23 +312,22 @@ const arr=["Espresso","Masala Coffee","Cafe Frappe","Kashmiri Kahwa","Green Tea"
    
 
 
-    taskInput.value = '';
+    // taskInput.value = '';
     //     }
     // else{
     //     alert("please select a dishn in the menu");
     // }
-    }
-        else{
-            alert("please add a dishname");
-        }
-     
+    // if(attempted > 0){
    document.getElementById("orderclear").style.display="flex";
-   document.getElementById("tasklist-h6").style.display="none";
+//    document.getElementById("tasklist-h6").style.display="none";
+
+    // }
 
 
-}
-
-
+    
+     }
+    // }
+    
 
 function opentab(argument,argument2){
     for(i=0;i<tabs.length;i++){
@@ -358,11 +362,11 @@ function ordernow(){
         alert("please place  atleast one order");
     }
     else{
-        alert("your order has been submitted visit again...");
+        alert("your order has been confirmed visit again...");
     }
     clear1();
 }
-setTimeout(clear1,1000);
+// setTimeout(clear1,1000);
 
 function submit1(){
     console.log(document.getElementById("textarea1").value);

@@ -470,9 +470,10 @@ min-width: 300px;
 
 }
 .activelink:hover{
-    transform:scale(1.05) ;
+    /* transform:scale(1.05) ; */
     font-size: 0.9rem;
-    padding: 20px 20px;
+    font-family: 'Courier New', Courier, monospace;
+    /* padding: 20px 20px; */
 
 }
 .underline{
